@@ -1,43 +1,38 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "takashato/phalcon-inertiajs",
+    "description": "Phalcon adapter for Inertia.js",
     "keywords": [
-        ":vendor_name",
-        "package_slug"
+        "takashato",
+        "phalcon-inertiajs",
+        "inertiajs",
+        "phalcon"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/takashato/phalcon-inertiajs",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Thanh Son Banh",
+            "email": "takashato@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.17",
-        "phpunit/phpunit": "^9.5",
-        "spatie/ray": "^1.10",
-        "vimeo/psalm": "^4.3"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src"
+            "Takashato\\Inertia\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Takashato\\Inertia\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {
         "sort-packages": true
